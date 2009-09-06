@@ -10,14 +10,30 @@
 <body>
 
 <p style="color: green"><%= flash[:notice] %></p>
-
+<div id="grass">
+	<div id="owl">
+	<div id="grass2">
 <div class="container">
-	<div class="span-4 append-1">
-		<div class="logo">
-		</div>
-	</div>
+
 	<div class="span-19 last">
 		<%= render :partial => 'layouts/header_links'%>
+	</div>
+	<div class="span-4 prepend-1 last">
+		<div class="logo">
+			<%= link_to (image_tag 'nvariable_logo.png'), :controller => 'welcome' %>
+		</div>
+	</div>
+	<div class="span-14 append-10 prepend-top last">
+		<span class="header_text">
+			We Make Software
+		</span>
+		<br />
+		<span class="header_subtext">
+			The kind that you <i>want</i> to use.
+		</span>
+		<div style="margin-top: 125px;">
+		<%= link_to image_tag('getintouch.png')%>
+		</div>
 	</div>
 	<%= yield  %>
 	<div class="span-24 last">
@@ -31,6 +47,8 @@
 </div>
 <div id="spacer">
 </div>
-
+</div>
+</div>
+</div>
 </body>
 </html>

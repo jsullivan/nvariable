@@ -29,17 +29,31 @@ body {
 	background: url('/images/bkgrnd.png') repeat-x;
   font-family: "Lucida Grande", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
+#grass {
+	background: transparent url(/images/grass.png) 70% 0 repeat-x ;
+	height: 637px;
+	padding: 0px;
+}
+#owl {
+	background: transparent url(/images/owl2.png) 80% 0 repeat-x ;
+	height: 637px;
+	padding: 0px;
+}
+#grass2 {
+	background: transparent url(/images/grass2.png) 100% 0 repeat-x ;
+	height: 637px;
+	padding: 0px;
+}
+
 /* HEADER 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 .logo {
-	background: url('/images/nvariable_logo.png');
 	height: 46px;
 	width: 178px;
 	margin-top: 20px;
 }
 .header_links {
-	text-align: right;
-	margin-top: 30px;
+	margin-top: 32px;
 	padding-right: 3px;
 }
 .header_links a{
@@ -51,4 +65,18 @@ body {
 }
 .header_links a:hover{
 	text-decoration: underline;
+}
+.header_text {
+	font-size: 5em;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	font-family: Helvetica;
+}
+.header_subtext {
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	font-family: Helvetica;
+	line-height: .25em;
+	
 }
