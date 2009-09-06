@@ -1,4 +1,54 @@
+/* 
+Created: 09/05/09
+Author: Josh Sullivan and Mark Turner
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+COLORS
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Background:        #ffffff
+Headlines:         #ffffff
+Sub Headlines:     #ffffff
+Main Text:         #ffffff
+Sub Text:          #ffffff
+Links:             #ffffff
+Rules:             #ffffff
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+INDEX
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+GENERAL
+HEADER
+PRODUCT SPACE
+CONTENT
+FOOTER
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/* GENERAL 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 body {
 	background: url('/images/bkgrnd.png') repeat-x;
   font-family: "Lucida Grande", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+/* HEADER 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.logo {
+	background: url('/images/nvariable_logo.png');
+	height: 46px;
+	width: 178px;
+	margin-top: 20px;
+}
+.header_links {
+	text-align: right;
+	margin-top: 30px;
+	padding-right: 3px;
+}
+.header_links a{
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.5em;
+	padding-right: 10px;
+}
+.header_links a:hover{
+	text-decoration: underline;
 }

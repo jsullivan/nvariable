@@ -11,12 +11,14 @@
 
 <p style="color: green"><%= flash[:notice] %></p>
 
-<div class="container dark_gray">
-	<div class="span-24 last">
-		<div id="banner">
+<div class="container">
+	<div class="span-4 append-1">
+		<div class="logo">
 		</div>
-			</div>
-	
+	</div>
+	<div class="span-19 last">
+		<%= render :partial => 'layouts/header_links'%>
+	</div>
 	<%= yield  %>
 	<div class="span-24 last">
 		<div id="spacer">
