@@ -13,7 +13,6 @@ ActiveRecord::Schema.define(:version => 20090906071505) do
 
   create_table "users", :force => true do |t|
     t.string   "login",                              :null => false
-    t.string   "email",                              :null => false
     t.string   "crypted_password",                   :null => false
     t.string   "password_salt",                      :null => false
     t.string   "persistence_token",                  :null => false
@@ -28,6 +27,7 @@ ActiveRecord::Schema.define(:version => 20090906071505) do
     t.string   "last_login_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email"
   end
 
 end

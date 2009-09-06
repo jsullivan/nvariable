@@ -1,6 +1,7 @@
 class RemoveNullFromUser < ActiveRecord::Migration
   def self.up
-    change_column :users, :email, :string
+    remove_column :users, :email
+    add_column :users, :email, :string
   end
 
   def self.down
