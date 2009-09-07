@@ -80,6 +80,16 @@ body {
 	line-height: .25em;
 }
 
+/* PRODUCT SPACE 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.little_box {
+	background: #333333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 5px;
+	color: #ffffff;
+}
+
 /* FOOTER 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 .footer_links {
