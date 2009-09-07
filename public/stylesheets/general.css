@@ -78,5 +78,12 @@ body {
 	letter-spacing: -0.05em;
 	font-family: Helvetica;
 	line-height: .25em;
-	
+}
+
+/* FOOTER 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.footer_links {
+	margin-top: 32px;
+	padding-right: 3px;
+	text-align: center;
 }

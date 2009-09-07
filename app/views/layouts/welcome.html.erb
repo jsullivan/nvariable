@@ -10,15 +10,18 @@
 <body>
 
 <p style="color: green"><%= flash[:notice] %></p>
+<!--faux 3d css magic-->
 <div id="grass">
-	<div id="owl">
-	<div id="grass2">
+<div id="owl">
+<div id="grass2">
+<!---->
 <div class="container">
-
-	<div class="span-19 last">
-		<%= render :partial => 'layouts/header_links'%>
+	<div class="span-18 last">
+		<div class="header_links">
+			<%= render :partial => 'layouts/main_links'%>
+		</div>
 	</div>
-	<div class="span-4 prepend-1 last">
+	<div class="span-5 prepend-1 last">
 		<div class="logo">
 			<%= link_to (image_tag 'nvariable_logo.png'), :controller => 'welcome' %>
 		</div>
@@ -32,21 +35,21 @@
 			The kind that you <i>want</i> to use.
 		</span>
 		<div style="margin-top: 125px;">
-		<%= link_to image_tag('getintouch.png')%>
+			<%= link_to image_tag('getintouch.png')%>
 		</div>
 	</div>
 	<%= yield  %>
-	<div class="span-24 last">
-		<div id="spacer">
+	<div class="span-24 last center">
+		<div style="margin-top: 25px;">
 		</div>
-		<div id="joinbox">	
+		<hr>
+		<div class="footer_links">
+			<%= image_tag 'nvariable_logo_inverted.png' %>
+			<br />
+			<%= render :partial => 'layouts/main_links'%><br />
+			All text and design is copyright ©2009 nVariable, Inc. All rights reserved.
 		</div>
 	</div>
-	<div class="span-24 last">
-	</div>
-</div>
-<div id="spacer">
-</div>
 </div>
 </div>
 </div>
