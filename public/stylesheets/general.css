@@ -71,6 +71,7 @@ body {
 	font-weight: bold;
 	letter-spacing: -0.05em;
 	font-family: Helvetica;
+	color: #000000;
 }
 .header_subtext {
 	font-size: 2em;
@@ -78,8 +79,16 @@ body {
 	letter-spacing: -0.05em;
 	font-family: Helvetica;
 	line-height: .25em;
+	color: #000000;
+	
 }
-
+.phone{
+	color: #94b9cc;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1em;
+	padding-right: 10px;
+}
 /* PRODUCT SPACE 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 .little_box {
