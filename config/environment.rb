@@ -9,7 +9,8 @@ RAILS_GEM_VERSION = '2.3.4' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
-
+require 'twitter'
+require 'yaml'
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
@@ -28,7 +29,8 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "authlogic"
-
+  config.gem "twitter"
+  config.gem "haml"
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -72,5 +74,7 @@ Rails::Initializer.run do |config|
 
   # Activate observers that should always be running
   # Please note that observers generated using script/generate observer need to have an _observer suffix
-  # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
+  # config.active_record.observers = :cacher, :garbage_collector, :forum_observer  
+  TWEET = YAML::load(File.open(File.join(RAILS_ROOT, 'config', 'tweet.yml')))
+  
 end

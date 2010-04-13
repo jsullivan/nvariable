@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %meta{'http-equiv' => 'content-type', :content => 'text/html;charset=UTF-8'}
+    %title
+      nVariable - Custom Web Application Design and Development
+    = stylesheet_link_tag 'blueprint/screen', 'general'
+
+  %body
+    #grass
+      #owl
+        #grass2
+          .container
+            .twenty_px_spacer
+            .prepend-18.span-5.prepend-1.last
+              .logo
+                = image_tag 'nvariable_logo.png'
+            .span-14.append-10.prepend-top.last
+              .header_text
+                We make software
+                %br
+              .header_subtext
+                that 
+                %i you
+                want to use.
+              .big_ass_spacer
+              = link_to image_tag('getintouch.png')
+            = yield
+            = render :partial => 'layouts/footer'

@@ -1,0 +1,116 @@
+.span-24.last{ :style => 'margin-top: 200px'}
+.span-6.append-1
+  .little_box
+    %h3{ :style => 'color: #ffffff'}
+      What we do
+    We specialize in designing, building and refining web applications and websites for startups and established companies.
+.span-5.append-1
+  = image_tag 'icon_graph.gif'
+  .ten_px_spacer
+  %h3
+    Within budget
+  We carefully scope projects to stay within your means.
+.span-5.append-1
+  = image_tag 'icon_time.gif'
+  .ten_px_spacer
+  %h3
+    On time
+  Our short work sprints get you the features you want fast.
+.span-5.last
+  = image_tag 'icon_user.gif'
+  .ten_px_spacer
+  %h3
+    To make you happy
+  Your satisfaction marks our success. We make you happy.
+.span-24.last{ :style => 'margin-top: 40px;'}
+.span-6.append-1
+  %h2
+    Who we are
+  nVariable is a digital development agency that specializes in creating medium to large 
+  web sites and applications with clean user experiences and optimized data architecture.
+  We work with you to create and launch your ideas into the wild from conception to completion. 
+  .prepend-top
+    = image_tag 'featured_site.png'
+
+.span-6.append-1
+  %h2
+    How we roll
+  We believe you should see quick progress on the work we do for you. That's why we believe in test driven development, rapid prototyping, and constant communication. You can expect to see short sprints of work with feature deployments early and often.
+	
+.span-9.prepend-1.last
+  = image_tag 'laptop_screenie.png'
+  %h2
+    Design
+  Using the latest in web standards and Ruby on Rails we 
+  rapidly prototype your idea from inception to completion. 
+  Using the latest in web standards and Ruby on Rails we 
+  rapidly prototype your idea from inception to completion. 
+  Using the latest in web standards and Ruby on Rails we 
+  rapidly prototype your idea from inception to completion.
+  .prepend-top
+  %h2
+    Development
+  Using the latest in web standards and Ruby on Rails we 
+  rapidly prototype your idea from inception to completion. 
+  Using the latest in web standards and Ruby on Rails we 
+  rapidly prototype your idea from inception to completion. 
+  Using the latest in web standards and Ruby on Rails we 
+  rapidly prototype your idea from inception to completion.
+	
+.span-24.last
+  .prepend-top
+  %hr
+  %h2
+    Services
+.span-8.append-1
+  %h3{ :style => 'color:red'}
+    Idea to launch
+  web standards and Ruby on Rails we 
+  rapidly prototype your idea from inception to completion. 
+  Using the latest in web standards and Ruby on R
+  %br
+.span-7.append-1
+  %h3{ :style => 'color:red'}
+    Design review 
+  web standards and Ruby on Rails we  
+  rapidly prototype your idea from inception to completion. 
+  Using the latest in web standards and Ruby on R
+  %br
+.span-7.last
+  %h3{ :style => 'color:red'}
+    Spit and polish 
+  web standards and Ruby on Rails we
+  rapidly prototype your idea from inception to completion. 
+  Using the latest in web standards and Ruby on R
+  %br
+.span-24.last
+  /<p align="right"><%= link_to (image_tag 'read_more.png')%></p>
+  /</div>
+  .twenty_px_spacer
+  %hr
+  %h2
+    nVariable is...
+  .span-11.append-2
+    = image_tag 'mark.jpg'
+    %br
+    %h3
+      Mark Turner
+    Using the latest in web standards and Ruby on Rails we
+    rapidly prototype your idea from inception to completion. 
+    Using the latest in web standards and Ruby on Rails we
+    %br
+  .span-11.last
+    = image_tag 'josh.jpg'
+    %h3 Josh Sullivan
+    Using the latest in web standards and Ruby on Rails we 
+    rapidly prototype your idea from inception to completion. 
+    Using the latest in web standards and Ruby on Rails we
+.span-24.last{ :style => 'margin-top: 40px'}
+  %hr
+  %h2
+    Recent followers
+  %br
+  - @mark_twitter.followers().each do |f| 
+    = link_to image_tag (f.profile_image_url), "http://twitter.com/#{f.screen_name}" 
+  - @josh_twitter.followers().each do |f| 
+    = link_to image_tag (f.profile_image_url), "http://twitter.com/#{f.screen_name}"

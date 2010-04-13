@@ -44,7 +44,15 @@ body {
 	height: 637px;
 	padding: 0px;
 }
-
+.ten_px_spacer {
+	margin-top: 10px;
+}
+.twenty_px_spacer {
+	margin-top: 20px;
+}
+.big_ass_spacer {
+	margin-top: 125px;
+}
 /* HEADER 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 .logo {
@@ -89,13 +97,16 @@ body {
 	font-size: 1em;
 	padding-right: 10px;
 }
+.phone_image {
+	display: inline;
+}
 /* PRODUCT SPACE 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 .little_box {
 	background: #333333;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	padding: 5px;
+	padding: 7px;
 	color: #ffffff;
 }
 
