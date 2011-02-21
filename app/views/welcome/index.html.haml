@@ -110,7 +110,3 @@
   %h2
     Recent followers
   %br
-  - @mark_twitter.followers().each do |f| 
-    = link_to image_tag(f.profile_image_url), "http://twitter.com/#{f.screen_name}" 
-  - @josh_twitter.followers().each do |f| 
-    = link_to image_tag(f.profile_image_url), "http://twitter.com/#{f.screen_name}"
